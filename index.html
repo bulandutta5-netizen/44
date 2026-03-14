@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slater Gym & Fitness | Premium Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#eab308',
+                        dark: '#111827',
+                        darker: '#030712'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-darker text-white font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 font-bold text-3xl tracking-tighter uppercase">
+                    Slater<span class="text-primary">Gym</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-primary transition px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#classes" class="hover:text-primary transition px-3 py-2 text-sm font-medium">Classes</a>
+                        <a href="#pricing" class="hover:text-primary transition px-3 py-2 text-sm font-medium">Pricing</a>
+                        <a href="#contact" class="bg-primary text-black px-6 py-2 rounded font-bold hover:bg-yellow-400 transition transform hover:scale-105">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6 uppercase italic">
+                Pain is <br><span class="text-primary text-7xl md:text-9xl">Temporary</span>
+            </h1>
+            <p class="mt-4 max-w-xl text-lg text-gray-300 mb-10 leading-relaxed">
+                Experience the atmosphere of a professional training facility. We provide the equipment, the expertise, and the community. You provide the sweat.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
+                <a href="#pricing" class="bg-primary text-black font-extrabold py-4 px-10 rounded uppercase tracking-widest hover:bg-yellow-400 transition">Start Free Trial</a>
+                <a href="#classes" class="border-2 border-white hover:border-primary hover:text-primary font-extrabold py-4 px-10 rounded uppercase tracking-widest transition">Explore Classes</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-black uppercase mb-16 italic">Membership <span class="text-primary">Tiers</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-darker p-10 rounded-2xl border border-gray-800 hover:border-primary/50 transition">
+                    <h3 class="text-2xl font-bold mb-4">Base</h3>
+                    <p class="text-5xl font-black mb-6">$29<span class="text-lg text-gray-500 font-normal">/mo</span></p>
+                    <ul class="text-gray-400 space-y-4 mb-10 text-left">
+                        <li><i class="fas fa-check text-primary mr-2"></i> 24/7 Gym Access</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Free Locker</li>
+                        <li><i class="fas fa-times text-red-500 mr-2"></i> Group Classes</li>
+                    </ul>
+                    <button class="w-full py-3 border border-primary text-primary font-bold rounded hover:bg-primary hover:text-black transition">Choose Plan</button>
+                </div>
+                <div class="bg-darker p-10 rounded-2xl border-2 border-primary transform md:-translate-y-6 shadow-2xl shadow-primary/10">
+                    <span class="bg-primary text-black text-xs font-black px-3 py-1 rounded-full uppercase mb-4 inline-block">Recommended</span>
+                    <h3 class="text-2xl font-bold mb-4">Elite</h3>
+                    <p class="text-5xl font-black mb-6 text-primary">$59<span class="text-lg text-white font-normal">/mo</span></p>
+                    <ul class="text-gray-300 space-y-4 mb-10 text-left">
+                        <li><i class="fas fa-check text-primary mr-2"></i> Everything in Base</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Unlimited Classes</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Guest Passes</li>
+                    </ul>
+                    <button class="w-full py-3 bg-primary text-black font-bold rounded hover:bg-yellow-400 transition shadow-lg shadow-primary/20">Join Elite</button>
+                </div>
+                <div class="bg-darker p-10 rounded-2xl border border-gray-800 hover:border-primary/50 transition">
+                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                    <p class="text-5xl font-black mb-6">$99<span class="text-lg text-gray-500 font-normal">/mo</span></p>
+                    <ul class="text-gray-400 space-y-4 mb-10 text-left">
+                        <li><i class="fas fa-check text-primary mr-2"></i> Everything in Elite</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Personal Trainer</li>
+                        <li><i class="fas fa-check text-primary mr-2"></i> Nutrition Plan</li>
+                    </ul>
+                    <button class="w-full py-3 border border-primary text-primary font-bold rounded hover:bg-primary hover:text-black transition">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-[100]">
+        <button onclick="toggleChat()" class="bg-primary text-black w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition duration-300 shadow-primary/20">
+            <i class="fas fa-comment-alt text-2xl"></i>
+        </button>
+        
+        <div id="chat-box" class="hidden absolute bottom-20 right-0 w-80 md:w-96 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300">
+            <div class="bg-primary p-4 flex justify-between items-center">
+                <span class="text-black font-black uppercase text-sm">Slater Gym AI Assistant</span>
+                <button onclick="toggleChat()" class="text-black hover:bg-black/10 rounded-full p-1"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chat-content" class="h-80 overflow-y-auto p-4 bg-gray-50 flex flex-col gap-4 text-black text-sm">
+                <div class="bg-gray-200 p-3 rounded-tr-xl rounded-bl-xl self-start max-w-[80%]">
+                    Welcome to Slater Gym! How can I help you crush your goals today?
+                </div>
+            </div>
+            <div class="p-4 border-t border-gray-200 bg-white flex gap-2">
+                <input type="text" id="user-input" placeholder="Ask about pricing, hours..." class="flex-1 border rounded-lg px-3 py-2 text-black text-sm focus:outline-none focus:ring-2 focus:ring-primary/50">
+                <button onclick="handleMsg()" class="bg-primary text-black px-4 py-2 rounded-lg font-bold"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            document.getElementById('chat-box').classList.toggle('hidden');
+        }
+
+        function handleMsg() {
+            const input = document.getElementById('user-input');
+            const content = document.getElementById('chat-content');
+            const msg = input.value.trim().toLowerCase();
+            
+            if(!msg) return;
+
+            // User Message
+            content.innerHTML += `<div class="bg-primary/20 p-3 rounded-tl-xl rounded-br-xl self-end max-w-[80%]">${input.value}</div>`;
+            input.value = '';
+
+            // AI Response logic
+            setTimeout(() => {
+                let response = "That's a great question! I recommend visiting our front desk or checking the pricing section.";
+                if(msg.includes('price') || msg.includes('cost')) response = "Our plans start at $29/mo. Our most popular 'Elite' plan is $59/mo.";
+                if(msg.includes('hour') || msg.includes('open')) response = "We are open 24/7 for all members! Staffed hours are 8am - 9pm.";
+                if(msg.includes('where') || msg.includes('location')) response = "We are located at 500 Fitness Way, Downtown.";
+
+                content.innerHTML += `<div class="bg-gray-200 p-3 rounded-tr-xl rounded-bl-xl self-start max-w-[80%]">${response}</div>`;
+                content.scrollTop = content.scrollHeight;
+            }, 600);
+        }
+    </script>
+</body>
+</html>
